@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Captive Portal FATECSCS</title>
+</head>
+<body>
+    <main id="container">
+        <div class="logos">
+            <a href="#">
+                 <img src="assets/imgs/logo-governo-de-sp.png" alt="Governo de SP">
+            </a>
+
+            <a href="#">
+                <img src="assets/imgs/logo-fatec-scs.png" alt="Fatec SCS">
+            </a>
+                
+            <a href="#">
+                <img src="assets/imgs/logo_cps.png" alt="CPS">
+            </a>
+        </div>
+
+        <form id="login_form">
+            <div id="form_header">
+                <h1>Login</h1>
+                <i id="mode_icon" class="fa-solid fa-moon"></i>
+            </div>
+
+            <div id="social_media">
+                <a href="#">
+                    <img src="assets/imgs/icons8-google-logo-50.png" alt="Google Logo">
+                </a>
+
+                <a href="#">
+                    <img src="assets/imgs/icons8-github-100.png" alt="GitHub Logo">
+                </a>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="name">
+                        Nome
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">
+                        E-mail
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="curso">
+                        Curso desejado
+                        <div class="input-field">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                               <select id="curso" name="curso">
+                                    <option value="" disabled selected>Selecione um curso</option>
+                                    <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+                                    <option value="CE">Comércio Exterior</option>
+                                    <option value="GE">Gestão Empresarial</option>
+                                    <option value="BD">Jogos Digitais</option>
+                                    <option value="RH">Segurança da Informação</option>
+                                </select>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="password">
+                        Senha
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                    </label>
+
+                    <div id="forgot_password">
+                        <a href="#">
+                            Esqueceu sua senha?
+                        </a>
+                    </div>
+                </div>
+
+                <div class="checkbox-lgpd">
+                    <label for="checkbox-lgpd">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox-lgpd" name="checkbox-lgpd" required>
+                                                          Autorizo o envio de e-mails institucionais com novidades, eventos e oportunidades da Fatec São Caetano do Sul, conforme a LGPD.
+                            </div> 
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" id="login_button" onclick="window.location.href='login-success.html'">
+                Entrar
+            </button>
+        </form>
+    </main>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
